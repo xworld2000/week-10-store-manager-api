@@ -1,8 +1,19 @@
 ### Test the stores
 ### stores are the customers such as each golf course
-
 GET http://localhost:3001/stores
-
 ### Test creating a store
-
+POST http://localhost:3001/stores
+Content-Type: application/json
+{
+    "title": "Golf store",
+    "Description": "Golfing stuff"
+}
 ### Test the PUT which should change a store
+PUT http://localhost:3001/localhost:3001/stores
+Content-Type: application/json
+{
+    "title": "Golf Supply Store"
+}
+### Test the Delete which should delete a store
+DELETE http://localhost:3001/stores
+Content-Type: application/json

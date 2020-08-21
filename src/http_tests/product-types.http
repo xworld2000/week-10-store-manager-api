@@ -7,5 +7,13 @@
 GET http://localhost:3001/product-types
 
 ### Test creating a type
+POST http://localhost:3001/product-types
+Content-Type: application/json
 
 ### Test the PUT which should change a type
+PUT http://localhost:3001/product-types
+Content-Type: application/json
+
+###
+DELETE http://localhost:3001/product-types
+Content-Type: application/json
